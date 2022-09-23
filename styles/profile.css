@@ -115,7 +115,7 @@
  
 
 
-  .form__info {
+  .form__info-profile {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;

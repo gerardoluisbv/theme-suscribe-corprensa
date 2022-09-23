@@ -1,5 +1,5 @@
 <?php 
-/* Template Name: Home*/
+/* Template Name: Home */
 get_header();
 ?>
 
@@ -60,7 +60,7 @@ get_header();
                                 <section class="profile__data">
                                     <h3 class="profile__subtitle border__bottom">Datos personales</h3>
 
-                                    <form class="form__info" action="">
+                                    <form class="form__info-profile" action="">
                                         <!-- grupo email -->
                                         <div class="form__group">
                                             <label for="email" class="form__label">Email</label>

@@ -5,48 +5,48 @@
 
   /* BACKGROUND */
   --color-background: #f8f8f8;
-
   --color-bg-ligthblue : #e8f1fe;
 
+  --color-red-prensa: #EB212E;
+
+ /* GIFT COLORS */
+  --color-background-gift : #fff3e0;
+  --color-border-gift : #ffe0b2;
 
   /* BUTTONS */
-    --color-button-blue: #0248d6;
-    --color-button-blue-hover: #035cd1;
-    
-    --color-card-blue: #0248d6;
+  --color-button-blue: #0248d6;
+  --color-button-blue-hover: #035cd1;
+   
+ /* Border Card */
+  --color-card-blue: #0248d6;
 
-  
-     
-    --color-red-prensa: #EB212E;
-    
-    /*  BRANDING COLOR */
-    --color-primary: #E12248;
-    --color-darkprimary: #C61C3E;
-    
-    --color-bg-lightgray: #F8F8F8;
-    --color-bg-midlightgray: #F2F2F2;
-    --color-bg-midgray: #b3b3b3;
-    --color-bg-gray: #888;
-    --color-bg-darkgray: #555;
-  
-    --color-bg-darkestgray: #333;
-    
-    --color-border-lightgray: #EEE;
-    
-    --color-bar-gray: #DDD;
-    --color-icon-lighgray: #CCC;
-    
-    --color-icon-midgray: #AAA;
-    --color-text-lightgray: #ccc;
-    --color-text-midgray: #999;
-    --color-text-gray: #777;
-  
-    /* $color-text-blue: #0364B7; */
-    --color-text-blue: #0074D9;
-    --color-text-yellow: #FBC02D;
-  
-  }
-
+   /*  BRANDING COLOR */
+   --color-primary: #E12248;
+   --color-darkprimary: #C61C3E;
+   
+   --color-bg-lightgray: #F8F8F8;
+   --color-bg-midlightgray: #F2F2F2;
+   --color-bg-midgray: #b3b3b3;
+   --color-bg-gray: #888;
+   --color-bg-darkgray: #555;
+ 
+   --color-bg-darkestgray: #333;
+   
+   --color-border-lightgray: #EEE;
+   
+   --color-bar-gray: #DDD;
+   --color-icon-lighgray: #CCC;
+   
+   --color-icon-midgray: #AAA;
+   --color-text-lightgray: #ccc;
+   --color-text-midgray: #999;
+   --color-text-gray: #777;
+ 
+   /* $color-text-blue: #0364B7; */
+   --color-text-blue: #0074D9;
+   --color-text-yellow: #FBC02D;
+ 
+ }
 * {
   margin: 0;
   padding: 0;
@@ -62,7 +62,7 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: "lato", sans-serif;
-  background-color: var(--color-background) !important;
+  background-color: white !important;
 }
 
 .header {

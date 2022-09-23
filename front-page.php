@@ -93,9 +93,11 @@
                                     <h3 class="card__price"> Anual </h3>
                                     <h6 class="card__subtitle-price"> Luego 5$ </h6>
                                     <div class="div__button">
-                                        <button class="card__button">
-                                            ELEGIR PLAN
-                                        </button>
+                                        <a href="/detalle">
+                                            <button class="card__button">
+                                                ELEGIR PLAN
+                                            </button>
+                                        </a>
                                         <span class="button__card-text"> Puedes cancelar en cualquier momento </span>
                                     </div>
                                 </div>
