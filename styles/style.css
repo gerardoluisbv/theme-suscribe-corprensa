@@ -1,0 +1,1393 @@
+
+
+
+:root {
+
+  /* BACKGROUND */
+  --color-background: #f8f8f8;
+
+  --color-bg-ligthblue : #e8f1fe;
+
+
+  /* BUTTONS */
+    --color-button-blue: #0248d6;
+    --color-button-blue-hover: #035cd1;
+    
+    --color-card-blue: #0248d6;
+
+  
+     
+    --color-red-prensa: #EB212E;
+    
+    /*  BRANDING COLOR */
+    --color-primary: #E12248;
+    --color-darkprimary: #C61C3E;
+    
+    --color-bg-lightgray: #F8F8F8;
+    --color-bg-midlightgray: #F2F2F2;
+    --color-bg-midgray: #b3b3b3;
+    --color-bg-gray: #888;
+    --color-bg-darkgray: #555;
+  
+    --color-bg-darkestgray: #333;
+    
+    --color-border-lightgray: #EEE;
+    
+    --color-bar-gray: #DDD;
+    --color-icon-lighgray: #CCC;
+    
+    --color-icon-midgray: #AAA;
+    --color-text-lightgray: #ccc;
+    --color-text-midgray: #999;
+    --color-text-gray: #777;
+  
+    /* $color-text-blue: #0364B7; */
+    --color-text-blue: #0074D9;
+    --color-text-yellow: #FBC02D;
+  
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "lato", sans-serif;
+  background-color: var(--color-background) !important;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  width: 100%;
+}
+
+/* Bienvenida con nombre del usuario*/
+.header__section {
+  text-align: right;
+  height: 25px;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+/* expande al elemento al 100% del padre (contenedor que esteblece % ) */
+.content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.center {
+  display: flex;
+  width: 100%;
+  justify-items: center;
+  justify-content: center;
+}
+
+/* BRAN DAY NATIVO */
+
+.container_branday {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  background: rgb(19, 113, 184);
+  background: radial-gradient(
+    circle,
+    rgba(19, 113, 184, 1) 0%,
+    rgba(39, 34, 98, 1) 100%
+  );
+}
+
+.flex__branday {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex__branday-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  line-height: 2.2em;
+}
+
+.button__branday {
+  width: 250px;
+  padding: 0.9em;
+  color: var(--color-button-blue);
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.flex__branday-left p {
+  margin-bottom: 0;
+  font-size: 1.5em;
+}
+
+.flex__branday-left .title__branday {
+  font-family: "Newsreader", serif;
+  font-weight: bold;
+  font-size: 2.2em;
+  line-height: 1.2em;
+}
+
+.flex__branday-left .price_second_branday {
+  letter-spacing: 0.2px;
+}
+
+.flex__branday-left .title_second_branday {
+  letter-spacing: 1.4px;
+}
+
+.flex__branday-left h3 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+del {
+  color: var(--color-bg-midgray);
+  font-size: 0.9em;
+  font-weight: normal;
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+/* TITULO */
+.title__main {
+  text-align: center;
+  font-family: "newsreader", sans-serif;
+  margin-top: 3em;
+}
+
+.h1__title {
+  font-size: 2.2em;
+  line-height: 1.2em;
+  padding-bottom: 1em;
+  font-weight: 600;
+}
+
+.title__main .sub__title {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+
+.title__main .font__red {
+  color: var(--color-red-prensa);
+}
+
+/* second title universitary plans */
+.title__second {
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* ----------- HEADER------------------------------ ---------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+.nav__container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 15px 10px -18px rgba(119, 118, 118, 0.2);
+  border-bottom: 1px solid rgba(135, 153, 160, 0.25);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 95%;
+  height: 100%;
+}
+
+/* alinea al regalo y al nav en flex column*/
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+/* CAJA DE REGALO Y TARJETA */
+.nav__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 100px;
+  margin-right: 20px;
+  background-color: none;
+  border-radius: 25px;
+}
+
+.btn__icon svg {
+  width: 40px;
+  transition: all 0.2s;
+}
+
+.btn__icon-gift svg {
+  width: 28px;
+  transition: all 0.2s;
+}
+
+.btn__icon-gift svg:hover {
+  fill: var(--color-red-prensa);
+}
+
+/* colores iniciales de tarjetita */
+#card-menu {
+  fill: black;
+  color: white;
+}
+
+/* hover a la card */
+.btn__icon #card-menu:hover {
+  fill: white;
+  color: black;
+}
+
+.nav__link a {
+  color: black;
+  font-weight: 600;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav__img--logo {
+  width: 150px;
+}
+
+.nav__img {
+  width: 40px;
+}
+
+/* fondo del menu desplegable */
+.back-menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(43, 53, 59, 0.4);
+  opacity: 0;
+  z-index: -2;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.back-menu-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* ----------- MENU DESKTOP ----------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+.nav__links .nav__link {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.4s;
+  font-size: 0.8em;
+}
+
+/* CADA UNA DE LAS RAYITAS */
+.nav__links .nav__link:before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background: var(--color-bg-midgray);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* oculta primera raya del menu desktop */
+.nav__links .nav__link:first-child:before {
+  display: none;
+}
+
+/* quita todos los iconos que son span */
+.nav__links .nav__link span:nth-child(1) {
+  display: none;
+}
+
+/* quito segunto hijo de nav (link de regalo para solo mostrar regalo) */
+.nav__links .nav__link:nth-child(2) {
+  display: none;
+}
+
+/* ultimo hijo de la lista (Menu)  */
+.nav__links li:last-child {
+  padding-right: 0;
+}
+
+.nav__links .nav__link a:hover {
+  border-bottom: 2px solid var(--color-red-prensa);
+  padding-bottom: 3px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* ------------ ICONS NAV ------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+/* DIV MENU ICON - CLOSE ICON */
+.nav__toggle {
+  cursor: pointer;
+  display: none;
+}
+
+/* HEADER DIV MENU PROFILE  */
+.nav__profile {
+  display: none;
+  cursor: pointer;
+}
+
+/* CLASS FOR TOGGLE */
+.icon_hidden {
+  display: none;
+}
+
+.icon_show {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* ---------- CARDS PRINCIPALS PLANS -------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+.planes__container {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card__plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 8px 0px rgba(119, 118, 118, 0.5);
+  min-height: 560px;
+  background-color: #fff;
+  border-top: 4px solid black;
+  margin-top: 20px;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+
+.card__title {
+  font-family: "Newsreader", serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.card__subtitle {
+  font-size: 0.8em;
+  color: var(--color-bg-midgray);
+  text-align: center;
+}
+
+.card__subtitle-price {
+  font-family: "newsreader", serif;
+  font-weight: normal;
+  font-size: 0.9em;
+  color: var(--color-bg-midgray);
+  text-align: center;
+}
+
+.card__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 0.8em;
+}
+
+.div__title {
+  padding-top: 2.5em;
+  padding-bottom: 1.2em;
+}
+
+.card__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--color-bar-gray);
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 0.8em;
+  width: 80%;
+  line-height: 1.4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: var(--color-text-gray);
+}
+
+.card__info li {
+  position: relative;
+}
+
+.card__info li:before {
+  content: "";
+  background: url("/wp-content/themes/suscribete/assets/check.svg");
+  background-position: center;
+  background-size: contain;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  position: absolute;
+  left: -1em;
+  top: 0.2em;
+}
+
+/* Espacio a todos los hijos de la lista ( descripcion de planes ) */
+.card__info li:nth-child(n) {
+  margin-bottom: 0.7em;
+}
+
+.card__img {
+  max-width: 200px;
+  object-fit: cover;
+}
+
+.card__pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+/* fuentes dentro de precio */
+.card__price {
+  font-family: "Newsreader", serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 0.2em;
+}
+
+.card__price--font {
+  font-family: "Newsreader", serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2.5em;
+}
+
+/* cambia tamaño a la fuente (signo de $) */
+.span__font {
+  font-size: 0.6em;
+}
+
+.button__card-text {
+  font-size: 0.7em;
+  color: black;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.card_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.div__card-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* BUTTONS PRINCIPALS PLANS*/
+
+.card__button {
+  background-color: var(--color-button-blue);
+  color: white;
+  font-family: "lato", sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 0.9em;
+  margin-top: 1em;
+  font-size: 0.8em;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card__button:hover {
+  background-color: var(--color-button-blue-hover);
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* ---------- OTHERS PLANS -------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+.container__others-plans {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 45px;
+  padding-top: 1.8em;
+}
+
+.container__others-plans .card__others-plans {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.border__blue {
+  border: 1px solid var(--color-button-blue);
+}
+
+.card__others-plans .card__top {
+  padding-top: 1.2em;
+  padding-bottom: 2em;
+  width: 100%;
+}
+
+.card__others-plans .card__top .div__title {
+  padding-top: 2.5em;
+  padding-bottom: 0.5em;
+}
+
+/* borde superior de la card del medio */
+.special__border {
+  border-style: none solid solid solid;
+  border-width: 1px;
+  border-color: var(--color-card-blue);
+  border-top: 4px solid var(--color-card-blue);
+}
+
+.card__border-blue {
+  border-top: 4px solid var(--color-card-blue);
+}
+
+.card__others-plans .card__top .div__card-price {
+  width: 80%;
+}
+
+.card__others-plans .card__top .div__card-price h3 {
+  color: var(--color-text-gray);
+}
+
+/* LINK TITLE PLAN UNIVERSITY */
+.link__plan-university {
+  text-align: center;
+  font-family: "Newsreader", serif;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+/* BUTTONS */
+
+.button_planes {
+  color: var(--color-text-gray);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-button-blue);
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_planes:hover {
+  box-shadow: rgb(0, 84, 252, 0.5) 0px 0px 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* ---------- BENEFICIOS DE SUSCRIPCIONES ---------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+.container__benefits {
+  padding-top: 3em;
+  padding-bottom: 4em;
+}
+
+.title__benefits {
+  font-family: "Lato", serif;
+  font-size: 1.8em;
+  color: #000;
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+.card__benefits-title .border__red {
+  padding-bottom: 0.1em;
+}
+
+
+
+.container__benefits .subtitle__benefits {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.container__benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 45px;
+  padding-top: 4em;
+}
+
+.card__benefits .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.card__benefits img {
+  max-width: 100px;
+  object-fit: cover;
+  padding-bottom: 1.5em;
+}
+
+.card__benefits .card__benefits-title {
+  font-family: "Lato", serif;
+  font-size: 1.4em;
+  color: #000;
+  text-align: left;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+}
+
+.card__benefits .card__benefits-text {
+  font-family: "Lato", serif;
+  font-size: 1.2em;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.card__benefits .card__benefits-text b {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* ---------- VIDEO -------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+.section__video {
+  margin-top: 3em;
+  background-color: black;
+  color: #fff;
+}
+
+.section__video .title__video {
+  font-size: 2em;
+}
+
+.section__video .subtitle__video {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: normal;
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 30%; /* 16/9 ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 100%;
+}
+
+/********************* BOTON DE VOLVER ARRIBA *********************/
+
+.container__button-up {
+  margin: 0 0 auto;
+  position: relative;
+  padding: 30px;
+}
+
+.button__up {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: 1px solid var(--color-bg-gray);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  border-radius: 50%;
+  color: var(--color-bg-gray);
+  z-index: 1;
+}
+
+.button__up:hover {
+  border: none;
+  color: #fff;
+  background: var(--color-bg-midgray);
+  transition: all 0.4s;
+}
+
+.button__up .material-symbols-outlined {
+  margin-top: 5px;
+}
+
+/**********************************************************************************************/
+/*******************************      FOOTER    **********************************************/
+/**********************************************************************************************/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 3em;
+}
+
+.footer-line {
+  width: 100%;
+  border-top: 1px solid white;
+  opacity: 0.2;
+}
+
+.padding {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo img {
+  max-width: 200px;
+}
+
+.footer__marcas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 80%;
+}
+
+.footer__marcas img {
+  border-left: 1px solid var(--color-bg-midgray);
+  padding-left: 1em;
+  max-height: 20px;
+}
+
+.footer__second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+.footer__gray {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-bar-gray);
+  color: black;
+}
+
+.footer__text {
+  max-width: 1200px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  line-height: 1.4em;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.footer__social button {
+  width: 40px;
+}
+
+.footer__social li {
+  margin-right: 10px;
+}
+
+.btn__social svg {
+  fill: white;
+  fill-opacity: 1;
+}
+
+.btn__social svg:hover {
+  fill: var(--color-bg-midgray);
+  fill-opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.footer__social img {
+  min-width: 50px;
+  padding-right: 10px;
+}
+
+.footer__end {
+  color: #fff;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+}
+
+.footer__end a {
+  color: #fff;
+}
+
+.footer__end a:hover {
+  opacity: 0.7;
+}
+
+.footer__second p {
+  margin-right: 5%;
+  line-height: 1.8em;
+  padding-top: 1.5em;
+}
+
+.footer__help h3 {
+  padding-bottom: 0.5em;
+}
+
+.footer__help h3,
+h4 {
+  line-height: 1.5em;
+}
+
+.align__icons {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  padding-bottom: 0.5em;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+hr {
+  width: 100%;
+  opacity: 0.4;
+}
+
+.border__red {
+  border-bottom: 3px solid var(--color-red-prensa);
+}
+
+.padding-border .border__red{
+  padding-bottom: 0.1em;
+}
+
+/***********************************************************************************************/
+/**************************************   CARROSEL *********************************************/
+/***********************************************************************************************/
+
+.carousel {
+  padding-top: 2em;
+}
+
+.container__carousel {
+  position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: none;
+  top: calc(50% - 15px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  border-radius: 50%;
+  color: #fff;
+  opacity: 100%;
+  z-index: 1;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+  opacity: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel__anterior {
+  left: 0px;
+}
+
+.carousel__siguiente {
+  right: 0px;
+}
+
+.carousel__lista {
+  overflow: hidden;
+}
+
+.carousel__indicadores .glider-dot {
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-bg-gray);
+  opacity: 0.6;
+  border-radius: 50px;
+}
+
+.carousel__indicadores .glider-dot.active {
+  background-color: black;
+  opacity: 0.6;
+}
+
+/********************************************************************************************/
+/********************************************************************************************/
+/* -------------------------------------- Media Queries ------------------------------------*/
+/********************************************************************************************/
+/********************************************************************************************/
+
+@media screen and (max-width: 1200px) {
+  .title__main .h1__title {
+    font-size: 1.9em;
+  }
+
+  .content {
+    width: 95%;
+  }
+
+  .nav {
+    width: 95%;
+  }
+
+  .card__plan {
+    width: 45%;
+  }
+
+  .card__pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_details {
+    width: 100%;
+  }
+
+  .flex__branday {
+    justify-content: space-between;
+  }
+
+  .flex__branday-left {
+    padding-top: 1.5em;
+  }
+
+  .flex__branday img {
+    width: 100%;
+  }
+
+  .button__branday {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .nav {
+    width: 90%;
+  }
+  .container_branday {
+    padding-top: 1em;
+  }
+
+  .flex__branday {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flex__branday-left {
+    text-align: center;
+    line-height: 1.8em;
+    width: 100%;
+  }
+
+  .flex__branday-rigth {
+    width: 100%;
+    text-align: center;
+  }
+
+  .flex__branday img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .flex__branday-left .title__branday {
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+  .flex__branday-left .title_second_branday {
+    letter-spacing: 0.5px;
+  }
+
+  .flex__branday-left h3 {
+    font-size: 2em;
+  }
+
+  .title__main .h1__title {
+    font-size: 1.5em;
+  }
+
+  .title__main {
+    margin-top: 0.5em;
+  }
+
+  .title__main .sub__title {
+    font-size: 1.2em;
+  }
+
+  .button__branday {
+    align-self: center;
+  }
+
+  .button__branday {
+    margin-bottom: 0;
+  }
+
+  .planes__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*******  VIDEO **********/
+
+  .video-responsive {
+    padding-bottom: 60%; /* 16/9 ratio */
+  }
+
+  .video-responsive iframe,
+  .video-responsive object,
+  .video-responsive embed {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* CARD PRICING */
+  .card__plan {
+    width: 100%;
+  }
+
+  .card__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .planes__container .card__plan .card__top .card__pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 1em;
+  }
+
+  .div__card-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card__subtitle-price {
+    font-size: 1em;
+  }
+
+  .div__button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card__button {
+    width: 100%;
+    justify-self: center;
+    font-size: 0.9em;
+    padding: 1.1em;
+  }
+
+  .card__subtitle {
+    font-size: 1em;
+  }
+
+  .button__card-text {
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+
+  .card__info {
+    font-size: 1.1em;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__logo {
+    padding-left: 0px;
+  }
+
+  .nav__profile {
+    width: 20px;
+    display: block;
+  }
+
+  /* grid de logos de marcas */
+  .footer__marcas {
+    width: 100%;
+  }
+
+
+  /*--------------------------------------------------------------------------------*/
+  /* ----------------- MENU MOBILE  ------------- ( Media Queries ) ----------------*/
+  /*--------------------------------------------------------------------------------*/
+
+  .nav__links {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* PENDIENDE DE CAMBIAR A START AL FINAL */
+    background-color: #fff;
+    min-width: 250px;
+    min-height: 100%;
+    padding-top: 100px;
+    box-shadow: 0px 16px 20px 10px rgba(119, 118, 118, 0.2);
+    overflow-y: auto;
+    left: -290px;
+    transition: all 0.4s;
+    z-index: -1;
+  }
+
+  /* items menu */
+  .nav__links .nav__link {
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all 0.4s;
+    vertical-align: middle;
+  }
+
+  /* before con lineas a la derecha (espacio de 1px) */
+  .nav__links .nav__link:before {
+    display: contents;
+    height: 100%;
+    position: relative;
+  }
+
+  /**************** MENU MOBILE ***************************/
+
+  /* ul al 100% del espacio del menu desplegable */
+  .nav__links .nav__link {
+    padding-top: 30px;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+  }
+
+  /* CADA LINK DE MENU EN MOBILE*/
+  /* link al 100% del item del menu para accesibilidad del link */
+  .nav__links .nav__link a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    font-weight: normal;
+    font-size: 1.2em;
+    border-left: 4px solid transparent;
+  }
+
+  .nav__links .nav__link a:hover {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bg-lightgray);
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    border-left: 4px solid var(--color-bg-midgray);
+  }
+
+  /* espacio entre en icono y el link en menu*/
+  .nav__links .nav__link span {
+    padding-right: 4px;
+  }
+
+  /* muestra link de regalo en mobile */
+  .nav__links .nav__link:nth-child(1) {
+    display: flex;
+  }
+
+  /* coloca todos los iconos que son span */
+  .nav__links .nav__link span:nth-child(1) {
+    display: block;
+  }
+
+  /* muestro segundo hijo de nav(regalo) */
+  .nav__links .nav__link:nth-child(2) {
+    display: flex;
+  }
+
+  /* oculto primero hijo (img de regalo y tarjeta) */
+  .nav__links .nav__item:nth-child(1) {
+    display: none;
+  }
+}
+
+/******************************** END MEDIA QUERIES ***************************************************/
+
+
+
+/* CLASS TOGGLE  MENU  (SHOULD BE BEFORE OF MEDIAS QUERIES) */
+.nav__links-active {
+  left: 0;
+}
+
+
+/****************** RESET STYLES *************************/
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.font__normal {
+  font-weight: normal;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.card__border-none {
+  border-top: 4px solid transparent;
+}
+
